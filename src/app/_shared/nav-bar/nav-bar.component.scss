@@ -19,6 +19,12 @@
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1024px) {
+    .nav-list a, .nav-list fa-icon {
+        padding: 0.15rem;
+    }
+}
+
 .nav-list a:not(.active-link) {
     transition: all 250ms ease-out;
     border-bottom: 0.125rem solid transparent;
