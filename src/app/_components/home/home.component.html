@@ -1,0 +1,23 @@
+<div class="container max-w-5xl  lg:mx-auto py-8">
+    <div class="header mx-4">
+        <h6 class="font-bold mb-4">Introduction</h6>
+        <div class="introduction">
+            <h1 class="mr-8 text-5xl inline">I'm Kwun Hyo Lee</h1>
+            <p class="inline-block"><i>/ke-vi-n/</i></p>
+        </div>
+
+        <div class="pitch text-4xl">
+            <h2>
+                <span class="font-semibold">My name is Kevin, and I make websites. </span>
+                I'm a <span class="font-medium underline">junior web developer</span> working in the
+                <span class="underline">South Brisbane area</span>, looking for my next opportunity.
+                Currently, I have
+                <span class="underline" *ngIf="(gitHubAccount$ | async) as account">
+                    {{ account.public_repos }}
+                </span><span class="underline"> projects</span> that you can see
+                <span class="font-medium underline"><a [routerLink]="['/projects']">here</a></span>.
+                I've worked previously at the <span class="font-medium underline">Australian Warranty Network</span>.
+            </h2>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+.logo a {
+    font-size: 2rem;
+    color: #ed8936;
+    font-weight: bold;
+}
+
+.color-switch {
+    width: 1em;
+    height: 1em;
+}
+
+.active-link {
+    border-bottom: 0.125rem solid #ed8936;
+}
+
+.nav-list a, .nav-list fa-icon {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.nav-list a:not(.active-link) {
+    transition: all 250ms ease-out;
+    border-bottom: 0.125rem solid transparent;
+}
+
+.nav-list a:not(.active-link):hover {
+    transition: all 250ms ease-out;
+    border-bottom: 0.125rem solid #d6d2cb;
+}
