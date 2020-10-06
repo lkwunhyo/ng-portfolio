@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubService } from '../../_services/github.service';
+
 import {
   faAngular, faReact, faHtml5, faCss3, faJsSquare, faSass,
   faNodeJs,
@@ -29,11 +31,13 @@ export class AboutComponent implements OnInit {
   faJira = faJira;
   faAws = faAws;
 
+  gitHubAccount$: any;
 
 
-  constructor() { }
+  constructor(private gitService: GithubService) { }
 
   ngOnInit(): void {
+    this.gitHubAccount$ = this.gitService.getGitHubAccount();
   }
 
 }

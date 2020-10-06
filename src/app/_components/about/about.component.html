@@ -24,10 +24,11 @@
   </div>
 </div>
 
-<div class="skills flex justify-center mt-20 py-20">
+<!-- Skills -->
+<div class="skills flex justify-center mt-20 pb-20">
   <!-- Skills Card -->
   <div class="card flex flex-col lg:flex-row justify-around w-4/5 rounded overflow-hidden shadow-lg bg-white h-auto">
-    <div class="text-center my-4 w-full lg:w-1/3">
+    <div class="text-center mt-16 mb-4 w-full lg:w-1/3">
       <h3 class="font-bold uppercase text-lg lg:text-3xl">Front End</h3>
       <hr>
       <div class="flex flex-col my-8 -mx-2">
@@ -69,7 +70,7 @@
 
     </div>
 
-    <div class="text-center my-4 w-full lg:w-1/3">
+    <div class="text-center mt-16 mb-4 w-full lg:w-1/3">
       <h3 class="font-bold uppercase text-lg lg:text-3xl">Back End</h3>
       <hr>
       <div class="flex flex-col my-8 -mx-2">
@@ -110,7 +111,7 @@
       </div>
     </div>
 
-    <div class="text-center my-4 w-full lg:w-1/3">
+    <div class="text-center mt-16 mb-4 w-full lg:w-1/3">
       <h3 class="font-bold uppercase text-lg lg:text-3xl">Tools</h3>
       <hr>
       <div class="flex flex-col my-8 -mx-2">
@@ -149,8 +150,26 @@
         </div>
 
       </div>
-
-
     </div>
-
   </div>
+</div>
+
+<div class="about container max-w-5xl lg:mx-auto my-16 lg:mt-32 py-8">
+  <div class="mx-4">
+    <h6 class="font-bold mb-4">Where I'm From</h6>
+    <div class="introduction">
+      <h1 class="mr-8 text-4xl lg:text-5xl inline">A University Graduate</h1>
+    </div>
+    <br />
+
+    <div class="pitch text-lg lg:text-3xl">
+      <h3>
+        I'm a <span class="font-semibold">graduate of the Queensland University of Technology</span>, with a
+        <span class="underline font-semibold">Bachelor of Information Technology</span> in Computer Science.
+        I graduated in the year of 2019, with <span class="font-semibold">an overall GPA of 6.32.</span>
+        I am currently working as a web developer at the
+        <span class="underline font-semibold" *ngIf="(gitHubAccount$ | async) as account">{{ account.company }}</span>.
+      </h3>
+    </div>
+  </div>
+</div>
