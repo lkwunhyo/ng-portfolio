@@ -1,20 +1,156 @@
-<div class="container max-w-5xl  lg:mx-auto py-8">
-    <div class="header mx-4">
-        <h6 class="font-bold mb-4">About Me</h6>
-        <div class="introduction">
-            <h1 class="mr-8 text-4xl lg:text-5xl inline">A Web Developer.</h1>
-        </div><br>
-
-        <div class="pitch text-2xl lg:text-3xl">
-            <h3>
-                <span class="font-semibold">Hi. I'm Kevin, and I'm a web developer. </span>
-                Since beginning my journey as a <span class="underline font-semibold">web developer</span> just about an
-                year ago, I've worked for several clients. I'm <span class="font-semibold">naturally curious</span> and
-                always working on projects in my free time.<br><br>
-                <span class="underline font-semibold">I'm a Christian</span> who enjoys
-                <span class="font-semibold">reading the Bible</span> and thinking
-                about the ways I code. Here are the things I've worked on since the beginning...
-            </h3>
-        </div>
+<div class="container max-w-5xl lg:mx-auto py-8">
+  <div class="header mx-4">
+    <h6 class="font-bold mb-4">About Me</h6>
+    <div class="introduction">
+      <h1 class="mr-8 text-4xl lg:text-5xl inline">A Web Developer.</h1>
     </div>
+    <br />
+
+    <div class="pitch text-lg lg:text-3xl">
+      <h3>
+        <span class="font-semibold">Hi. I'm Kevin, and I'm a web developer.
+        </span>
+        Since the beginning of my journey as a
+        <span class="underline font-semibold">web developer</span>, I've worked
+        for several clients. I'm
+        <span class="font-semibold">naturally curious</span> and am always
+        working on projects in my free time.<br /><br />
+        <span class="underline font-semibold">I'm a Christian</span> who enjoys
+        <span class="font-semibold">reading the Bible</span> and thinking about
+        the ways I code. Here are the skills I've worked on since the
+        beginning...
+      </h3>
+    </div>
+  </div>
 </div>
+
+<div class="skills flex justify-center mt-20 py-20">
+  <!-- Skills Card -->
+  <div class="card flex flex-col lg:flex-row justify-around w-4/5 rounded overflow-hidden shadow-lg bg-white h-auto">
+    <div class="text-center my-4 w-full lg:w-1/3">
+      <h3 class="font-bold uppercase text-lg lg:text-3xl">Front End</h3>
+      <hr>
+      <div class="flex flex-col my-8 -mx-2">
+
+        <div class="flex justify-evenly m-4">
+          <div>
+            <fa-icon [icon]="faAngular" size="6x"></fa-icon>
+            <h6 class="uppercase">Angular</h6>
+          </div>
+          <div>
+            <fa-icon [icon]="faReact" size="6x"></fa-icon>
+            <h6 class="uppercase">React</h6>
+          </div>
+        </div>
+
+        <div class="flex justify-evenly m-4">
+          <div>
+            <fa-icon [icon]="faHtml5" size="6x"></fa-icon>
+            <h6 class="uppercase">HTML5</h6>
+          </div>
+          <div>
+            <fa-icon [icon]="faCss3" size="6x"></fa-icon>
+            <h6 class="uppercase">CSS3</h6>
+          </div>
+        </div>
+
+        <div class="flex justify-evenly m-4">
+          <div>
+            <fa-icon [icon]="faJs" size="6x"></fa-icon>
+            <h6 class="uppercase">Javascript</h6>
+          </div>
+          <div>
+            <fa-icon [icon]="faSass" size="6x"></fa-icon>
+            <h6 class="uppercase">Sass</h6>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="text-center my-4 w-full lg:w-1/3">
+      <h3 class="font-bold uppercase text-lg lg:text-3xl">Back End</h3>
+      <hr>
+      <div class="flex flex-col my-8 -mx-2">
+
+        <div class="flex justify-evenly m-4">
+          <div>
+            <fa-icon [icon]="faAngular" size="6x"></fa-icon>
+            <h6 class="uppercase">ASP.NET</h6>
+          </div>
+          <div>
+            <fa-icon [icon]="faReact" size="6x"></fa-icon>
+            <h6 class="uppercase">.NET Core</h6>
+          </div>
+        </div>
+
+        <div class="flex justify-evenly m-4">
+          <div>
+            <fa-icon [icon]="faAngular" size="6x"></fa-icon>
+            <h6 class="uppercase">SQL Server</h6>
+          </div>
+          <div>
+            <fa-icon [icon]="faReact" size="6x"></fa-icon>
+            <h6 class="uppercase">MySQL</h6>
+          </div>
+        </div>
+
+        <div class="flex justify-evenly m-4">
+          <div>
+            <fa-icon [icon]="faNode" size="6x"></fa-icon>
+            <h6 class="uppercase">Node</h6>
+          </div>
+          <div>
+            <fa-icon [icon]="faNode" size="6x"></fa-icon>
+            <h6 class="uppercase">Node</h6>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="text-center my-4 w-full lg:w-1/3">
+      <h3 class="font-bold uppercase text-lg lg:text-3xl">Tools</h3>
+      <hr>
+      <div class="flex flex-col my-8 -mx-2">
+
+        <div class="flex justify-evenly m-4">
+          <div>
+            <fa-icon [icon]="faBootstrap" size="6x"></fa-icon>
+            <h6 class="uppercase">Bootstrap</h6>
+          </div>
+          <div>
+            <fa-icon [icon]="faBootstrap" size="6x"></fa-icon>
+            <h6 class="uppercase">Tailwind CSS</h6>
+          </div>
+        </div>
+
+        <div class="flex justify-evenly m-4">
+          <div>
+            <fa-icon [icon]="faGit" size="6x"></fa-icon>
+            <h6 class="uppercase">GitHub</h6>
+          </div>
+          <div>
+            <fa-icon [icon]="faBit" size="6x"></fa-icon>
+            <h6 class="uppercase">BitBucket</h6>
+          </div>
+        </div>
+
+        <div class="flex justify-evenly m-4">
+          <div>
+            <fa-icon [icon]="faJira" size="6x"></fa-icon>
+            <h6 class="uppercase">JIRA</h6>
+          </div>
+          <div>
+            <fa-icon [icon]="faAws" size="6x"></fa-icon>
+            <h6 class="uppercase">AWS</h6>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>

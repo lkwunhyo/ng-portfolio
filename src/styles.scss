@@ -1,30 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Color Themes - light-mode, dark-mode, forest-green, lemon-yellow */
+@import url("assets/themes/themes.scss");
 
 /* Fonts Styling */
 @import url("https://fonts.googleapis.com/css?family=Inter");
 //@import 'assets/fonts.scss';
 
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    font-family: Inter;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: Inter;
 }
 
 body {
   transition: background 500ms ease;
   background: #ffffff;
 
+  /* Navigation Bar */
+  app-nav-bar .upper-bar {
+    transition: background 500ms ease;
+    background: #ed8936;
+  }
+
+  app-nav-bar .logo a {
+    transition: color 500ms ease;
+    color: #ed8936;
+  }
+
+  app-nav-bar .active-link {
+    transition: border-bottom 500ms ease;
+    border-bottom: 0.125rem solid #ed8936;
+  }
+
+  /* Typography */
   h1 {
     transition: color 500ms ease;
     color: #2d3748;
-  } 
+  }
 
   h2, h3, a, fa-icon, p {
     transition: color 500ms ease;
@@ -36,38 +56,40 @@ body {
     color: #77869b;
   }
 
+  hr {
+    transition: border-color 500ms ease;
+    border-top-width: 0.2rem;
+    width: 10%;
+    margin: 0.5rem auto 0 auto;
+    border-color: #ed8936;
+  }
+
+  .underline {
+    transition: text-decoration 500ms ease;
+    text-decoration: underline;
+    text-decoration-color: #ed8936;
+  }
+
+  .card {
+    transition: linear-gradient 500ms ease;
+    background: linear-gradient(to bottom, #ed8936 0.2rem,  #ffffff 0.2rem) no-repeat;
+  }
+
+  /* About Me */
+    /* Skills */
+  .skills {
+    transition: linear-gradient 500ms ease;
+    background: linear-gradient(to bottom, transparent 20%,  #fffaf0 20%) no-repeat;
+  }
+
+  /* Footer */
   footer {
     transition: background 500ms ease;
     background: #fffaf0;
   }
-}
 
-/* Dark Mode Styling */
-body.dark-mode {
-  transition: background 500ms ease;
-  background: #39342d;
-
-  h1, h2, h3, a, fa-icon, p {
-    transition: color 500ms ease;
-    color: #efedea;
-  }
-
-  h6 {
-    transition: color 500ms ease;
-    color: #a89e90;
-  }
-
-  footer {
-    transition: background 500ms ease;
-    background: #2a2722;
+  footer a:hover {
+    color: #ed8936;
   }
 }
 
-/* Text Highlighting */
-::selection {
-  background: #ed8936; /* WebKit/Blink Browsers */
-}
-
-::-moz-selection {
-  background: #ed8936; /* Gecko Browsers */
-}
