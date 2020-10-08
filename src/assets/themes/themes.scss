@@ -56,6 +56,16 @@ body.dark-mode {
         background: linear-gradient(to bottom, transparent 20%,  #2a2722 20%) no-repeat;
     }
 
+    /* Projects */
+        /* Projects */
+    .projects h1 {
+        color: #e2e8f0;
+    }
+
+    .projects a:hover {
+        color: #ed8936;
+    }
+
     /* Footer */
     footer {
         transition: background 500ms ease;
@@ -127,6 +137,16 @@ body.forest-green {
     .skills {
         transition: linear-gradient 500ms ease;
         background: linear-gradient(to bottom, transparent 20%,  #fafff9 20%) no-repeat;
+    }
+
+    /* Projects */
+        /* Projects */
+    .projects h1 {
+        color: #9c9c9c;
+    }
+
+    .projects a:hover {
+        color: #19e68c;
     }
 
     /* Footer */
@@ -201,6 +221,16 @@ body.lemon-yellow {
         transition: linear-gradient 500ms ease;
         background: linear-gradient(to bottom, transparent 20%,  #f9f9e159 20%) no-repeat;
     }
+
+    /* Projects */
+        /* Projects */
+    .projects h1 {
+        color: #9c9c9c;
+    }
+
+    .projects a:hover {
+        color: #ecec49;
+    }
     
 
     /* Footer */
@@ -274,6 +304,16 @@ body.blue-purple {
     .skills {
         transition: linear-gradient 500ms ease;
         background: linear-gradient(to bottom, transparent 20%,  #fbf8ff 20%) no-repeat;
+    }
+
+    /* Projects */
+        /* Projects */
+    .projects h1 {
+        color: #9c9c9c;
+    }
+
+    .projects a:hover {
+        color: #7510f7;
     }
 
     /* Footer */

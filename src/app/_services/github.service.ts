@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, ɵSWITCH_CHANGE_DETECTOR_REF_FACTORY__POST_R3__ } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
@@ -27,8 +27,20 @@ export class GithubService {
   getRepos() {
     return this.http.get<any>(`${this.baseUrl}/users/${this.user}/repos`).pipe(
       map(repos => {
-        console.log(repos[repos.length - 1]);
-        return repos[repos.length - 1];
+        return repos.sort((a, b) => {
+          return <any>new Date(b.created) - <any>new Date(a.created);
+        })
+      }),
+      catchError(this.handleError)
+    );
+  }
+
+  getLastRepos() {
+    return this.http.get<any>(`${this.baseUrl}/users/${this.user}/repos`).pipe(
+      map(repos => {
+        return repos.sort((a, b) => {
+          return <any>new Date(b.created_at) - <any>new Date(a.created_at);
+        })[repos.length - 1];
       }),
       catchError(this.handleError)
     );

@@ -12,11 +12,11 @@ export class FooterComponent implements OnInit {
   constructor(private gitService: GithubService) { }
 
   ngOnInit(): void {
-    this.repos$ = this.getRepos();
+    this.repos$ = this.getLastRepos();
   }
 
-  getRepos() {
-    return this.gitService.getRepos();
+  getLastRepos() {
+    return this.gitService.getLastRepos();
   }
 
 }

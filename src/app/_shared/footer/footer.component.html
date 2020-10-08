@@ -28,9 +28,12 @@
                 <h6 class="font-bold mb-4 uppercase">Latest Git Contribution</h6>
                 <div *ngIf="(repos$ | async) as repos; else noContribution">
                     <h3 class="text-2xl font-bold"><a [href]="repos.html_url">{{ repos.name }}</a></h3>
-                    <p class="mt-1">
+                    <p class="mt-1" *ngIf="repos.description; else noDescription">
                         {{ repos.description.substring(0, 149) }}{{ repos.description.length > 149 ? '...' : '' }}
                     </p>
+                    <ng-template #noDescription>
+                        No description available.
+                    </ng-template>
                 </div>
                 <ng-template #noContribution>
                     <p class="mt-1">

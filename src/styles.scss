@@ -82,6 +82,16 @@ body {
     background: linear-gradient(to bottom, transparent 20%,  #fffaf0 20%) no-repeat;
   }
 
+  /* Projects */
+    /* Projects */
+  .projects h1 {
+    color: #9c9c9c;
+  }
+
+  .projects a:hover {
+    color: #ed8936;
+  }
+
   /* Footer */
   footer {
     transition: background 500ms ease;
