@@ -40,7 +40,7 @@ export class GithubService {
       map(repos => {
         return repos.sort((a, b) => {
           return <any>new Date(b.created_at) - <any>new Date(a.created_at);
-        })[repos.length - 1];
+        })[0];
       }),
       catchError(this.handleError)
     );

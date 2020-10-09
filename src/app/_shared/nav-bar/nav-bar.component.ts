@@ -10,10 +10,10 @@ import { faAdjust, faLeaf } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavBarComponent implements OnInit {
   colorThemes = {
-    '': faAdjust,
-    'dark-mode': faMoon,
-    'forest-green': faLeaf,
-    'lemon-yellow': faLemon
+    '': '../../../assets/icons/Nav/sunny-outline.svg',
+    'dark-mode': '../../../assets/icons/Nav/cloudy-night-outline.svg',
+    'forest-green': '../../../assets/icons/Nav/leaf-outline.svg',
+    'lemon-yellow': '../../../assets/icons/Nav/icons_Orange.svg'
   };
   currentTheme: any;
   nextTheme: any;   // For navigation theme button
@@ -29,10 +29,13 @@ export class NavBarComponent implements OnInit {
     let entries = Object.entries(this.colorThemes);
     let currentIndex = entries.findIndex(x => x[0] == this.currentTheme[0]);
     this.currentTheme = currentIndex < entries.length - 1 ? entries[currentIndex + 1] : entries[0];
-    this.nextTheme = currentIndex + 1 < entries.length - 1 ? entries[currentIndex + 2] : entries[0];
+
+    let nextIndex = entries.findIndex(x => x[0] == this.currentTheme[0]);
+    this.nextTheme = nextIndex < entries.length - 1 ? entries[nextIndex + 1] : entries[0];
+    console.log(currentIndex + ' ' + entries.length);
 
     document.body.removeAttribute('class');
-    document.body.classList.toggle(this.currentTheme[0]);
+    if (currentIndex !== 3) document.body.classList.toggle(this.currentTheme[0]);
   }
 
 }

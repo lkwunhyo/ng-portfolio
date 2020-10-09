@@ -1,36 +1,67 @@
 /* Color Modes Styling */
 body.dark-mode {
+    -webkit-transition: background 500ms ease;
+    -moz-transition: background 500ms ease;
+    -o-transition: background 500ms ease;
     transition: background 500ms ease;
     background: #39342d;
 
     /* Navigation Bar */
     app-nav-bar .upper-bar {
+        -webkit-transition: background 500ms ease;
+        -moz-transition: background 500ms ease;
+        -o-transition: background 500ms ease;
         transition: background 500ms ease;
         background: #ed8936;
     }
 
     app-nav-bar .logo a {
+        -webkit-transition: color 500ms ease;
+        -moz-transition: color 500ms ease;
+        -o-transition: color 500ms ease;
         transition: color 500ms ease;
         color: #ed8936;
     }
 
     app-nav-bar .active-link {
+        -webkit-transition: border-bottom 500ms ease;
+        -moz-transition: border-bottom 500ms ease;
+        -o-transition: border-bottom 500ms ease;
         transition: border-bottom 500ms ease;
         border-bottom: 0.125rem solid #ed8936;
     }
 
+    app-nav-bar .nav-icon {
+        -webkit-transition: filter 500ms ease;
+        -moz-transition: filter 500ms ease;
+        -o-transition: filter 500ms ease;
+        transition: filter 500ms ease;
+        width: 1.5rem;
+        height: 1.5rem;
+        filter: brightness(0%) invert(97%) sepia(2%) saturate(485%) hue-rotate(330deg) brightness(102%) contrast(88%);
+    }
+
     /* Typography */
     h1, h2, h3, a, fa-icon, p {
+        -webkit-transition: color 500ms ease;
+        -moz-transition: color 500ms ease;
+        -o-transition: color 500ms ease;
         transition: color 500ms ease;
         color: #efedea;
     }
 
     h6 {
+        -webkit-transition: color 500ms ease;
+        -moz-transition: color 500ms ease;
+        -o-transition: color 500ms ease;
         transition: color 500ms ease;
         color: #a89e90;
     }
 
     hr {
+        -webkit-transition: border-color 500ms ease;
+        -moz-transition: border-color 500ms ease;
+        -o-transition: border-color 500ms ease;
         transition: border-color 500ms ease;
         border-top-width: 0.2rem;
         width: 10%;
@@ -39,12 +70,18 @@ body.dark-mode {
       }
 
     .underline {
+        -webkit-transition: text-decoration 500ms ease;
+        -moz-transition: text-decoration 500ms ease;
+        -o-transition: text-decoration 500ms ease;
         transition: text-decoration 500ms ease;
         text-decoration: underline;
         text-decoration-color: #ed8936;
     }
 
     .card {
+        -webkit-transition: linear-gradient 500ms ease;
+        -moz-transition: linear-gradient 500ms ease;
+        -o-transition: linear-gradient 500ms ease;
         transition: linear-gradient 500ms ease;
         background: linear-gradient(to bottom, #ed8936 0.2rem,  #39342d 0.2rem) no-repeat;
     }
@@ -52,8 +89,21 @@ body.dark-mode {
     /* About Me */
         /* Skills */
     .skills {
+        -webkit-transition: linear-gradient 500ms ease;
+        -moz-transition: linear-gradient 500ms ease;
+        -o-transition: linear-gradient 500ms ease;
         transition: linear-gradient 500ms ease;
         background: linear-gradient(to bottom, transparent 20%,  #2a2722 20%) no-repeat;
+    }
+
+    .skills-icon {
+        -webkit-transition: filter 500ms ease;
+        -moz-transition: filter 500ms ease;
+        -o-transition: filter 500ms ease;
+        transition: filter 500ms ease;
+        width: 6em;
+        height: 6em;
+        filter: brightness(0%) invert(97%) sepia(2%) saturate(485%) hue-rotate(330deg) brightness(102%) contrast(88%);
     }
 
     /* Projects */
@@ -68,6 +118,9 @@ body.dark-mode {
 
     /* Footer */
     footer {
+        -webkit-transition: background 500ms ease;
+        -moz-transition: background 500ms ease;
+        -o-transition: background 500ms ease;
         transition: background 500ms ease;
         background: #2a2722;
     }
@@ -78,42 +131,76 @@ body.dark-mode {
 }
 
 body.forest-green {
+    -webkit-transition: background 500ms ease;
+    -moz-transition: background 500ms ease;
+    -o-transition: background 500ms ease;
     transition: background 500ms ease;
     background: #ffffff;
 
     /* Navigation Bar */
     app-nav-bar .upper-bar {
+        -webkit-transition: background 500ms ease;
+        -moz-transition: background 500ms ease;
+        -o-transition: background 500ms ease;
         transition: background 500ms ease;
         background: #19e68c;
     }
 
     app-nav-bar .logo a {
+        -webkit-transition: color 500ms ease;
+        -moz-transition: color 500ms ease;
+        -o-transition: color 500ms ease;
         transition: color 500ms ease;
         color: #19e68c
     }
 
     app-nav-bar .active-link {
+        -webkit-transition: border-bottom 500ms ease;
+        -moz-transition: border-bottom 500ms ease;
+        -o-transition: border-bottom 500ms ease;
         transition: border-bottom 500ms ease;
         border-bottom: 0.125rem solid #19e68c;
     }
 
+    app-nav-bar .nav-icon {
+        -webkit-transition: filter 500ms ease;
+        -moz-transition: filter 500ms ease;
+        -o-transition: filter 500ms ease;
+        transition: filter 500ms ease;
+        width: 1.5rem;
+        height: 1.5rem;
+        filter: brightness(0%) invert(31%) sepia(23%) saturate(559%) hue-rotate(179deg) brightness(90%) contrast(81%);
+    }
+
     /* Typography */
     h1 {
+        -webkit-transition: color 500ms ease;
+        -moz-transition: color 500ms ease;
+        -o-transition: color 500ms ease;
         transition: color 500ms ease;
         color: #2d3748;
     }
 
     h2, h3, a, fa-icon, p {
+        -webkit-transition: color 500ms ease;
+        -moz-transition: color 500ms ease;
+        -o-transition: color 500ms ease;
         transition: color 500ms ease;
         color: #4a5568;
     }
 
     h6 {
+        -webkit-transition: color 500ms ease;
+        -moz-transition: color 500ms ease;
+        -o-transition: color 500ms ease;
         transition: color 500ms ease;
         color: #77869b;
     }
 
     hr {
+        -webkit-transition: border-color 500ms ease;
+        -moz-transition: border-color 500ms ease;
+        -o-transition: border-color 500ms ease;
         transition: border-color 500ms ease;
         border-top-width: 0.2rem;
         width: 10%;
@@ -122,12 +209,18 @@ body.forest-green {
     }
 
     .underline {
+        -webkit-transition: text-decoration 500ms ease;
+        -moz-transition: text-decoration 500ms ease;
+        -o-transition: text-decoration 500ms ease;
         transition: text-decoration 500ms ease;
         text-decoration: underline;
         text-decoration-color: #19e68c;
     }
 
     .card {
+        -webkit-transition: linear-gradient 500ms ease;
+        -moz-transition: linear-gradient 500ms ease;
+        -o-transition: linear-gradient 500ms ease;
         transition: linear-gradient 500ms ease;
         background: linear-gradient(to bottom, #19e68c 0.2rem,  #ffffff 0.2rem) no-repeat;
     }
@@ -135,8 +228,21 @@ body.forest-green {
     /* About Me */
         /* Skills */
     .skills {
+        -webkit-transition: linear-gradient 500ms ease;
+        -moz-transition: linear-gradient 500ms ease;
+        -o-transition: linear-gradient 500ms ease;
         transition: linear-gradient 500ms ease;
         background: linear-gradient(to bottom, transparent 20%,  #fafff9 20%) no-repeat;
+    }
+
+    .skills-icon {
+        -webkit-transition: filter 500ms ease;
+        -moz-transition: filter 500ms ease;
+        -o-transition: filter 500ms ease;
+        transition: filter 500ms ease;
+        width: 6em;
+        height: 6em;
+        filter: brightness(0%) invert(31%) sepia(23%) saturate(559%) hue-rotate(179deg) brightness(90%) contrast(81%);
     }
 
     /* Projects */
@@ -151,6 +257,9 @@ body.forest-green {
 
     /* Footer */
     footer {
+        -webkit-transition: background 500ms ease;
+        -moz-transition: background 500ms ease;
+        -o-transition: background 500ms ease;
         transition: background 500ms ease;
         background: #fafff9;
     }
@@ -161,42 +270,76 @@ body.forest-green {
 }
 
 body.lemon-yellow {
+    -webkit-transition: background 500ms ease;
+    -moz-transition: background 500ms ease;
+    -o-transition: background 500ms ease;
     transition: background 500ms ease;
     background: #ffffff;
 
     /* Navigation Bar */
     app-nav-bar .upper-bar {
+        -webkit-transition: background 500ms ease;
+        -moz-transition: background 500ms ease;
+        -o-transition: background 500ms ease;
         transition: background 500ms ease;
         background: #ecec49;
     }
 
     app-nav-bar .logo a {
+        -webkit-transition: color 500ms ease;
+        -moz-transition: color 500ms ease;
+        -o-transition: color 500ms ease;
         transition: color 500ms ease;
         color: #ecec49;
     }
 
     app-nav-bar .active-link {
+        -webkit-transition: border-bottom 500ms ease;
+        -moz-transition: border-bottom 500ms ease;
+        -o-transition: border-bottom 500ms ease;
         transition: border-bottom 500ms ease;
         border-bottom: 0.125rem solid #ecec49;
     }
 
+    app-nav-bar .nav-icon {
+        -webkit-transition: filter 500ms ease;
+        -moz-transition: filter 500ms ease;
+        -o-transition: filter 500ms ease;
+        transition: filter 500ms ease;
+        width: 1.5rem;
+        height: 1.5rem;
+        filter: brightness(0%) invert(31%) sepia(23%) saturate(559%) hue-rotate(179deg) brightness(90%) contrast(81%);
+    }
+
     /* Typography */
     h1 {
+        -webkit-transition: color 500ms ease;
+        -moz-transition: color 500ms ease;
+        -o-transition: color 500ms ease;
         transition: color 500ms ease;
         color: #2d3748;
     }
 
     h2, h3, a, fa-icon, p {
+        -webkit-transition: color 500ms ease;
+        -moz-transition: color 500ms ease;
+        -o-transition: color 500ms ease;
         transition: color 500ms ease;
         color: #4a5568;
     }
 
     h6 {
+        -webkit-transition: color 500ms ease;
+        -moz-transition: color 500ms ease;
+        -o-transition: color 500ms ease;
         transition: color 500ms ease;
         color: #77869b;
     }
 
     hr {
+        -webkit-transition: border-color 500ms ease;
+        -moz-transition: border-color 500ms ease;
+        -o-transition: border-color 500ms ease;
         transition: border-color 500ms ease;
         border-top-width: 0.2rem;
         width: 10%;
@@ -205,12 +348,18 @@ body.lemon-yellow {
     }
 
     .underline {
+        -webkit-transition: text-decoration 500ms ease;
+        -moz-transition: text-decoration 500ms ease;
+        -o-transition: text-decoration 500ms ease;
         transition: text-decoration 500ms ease;
         text-decoration: underline;
         text-decoration-color: #ecec49;
     }
 
     .card {
+        -webkit-transition: linear-gradient 500ms ease;
+        -moz-transition: linear-gradient 500ms ease;
+        -o-transition: linear-gradient 500ms ease;
         transition: linear-gradient 500ms ease;
         background: linear-gradient(to bottom, #ecec49 0.2rem,  #ffffff 0.2rem) no-repeat;
     }
@@ -218,8 +367,21 @@ body.lemon-yellow {
     /* About Me */
         /* Skills */
     .skills {
+        -webkit-transition: linear-gradient 500ms ease;
+        -moz-transition: linear-gradient 500ms ease;
+        -o-transition: linear-gradient 500ms ease;
         transition: linear-gradient 500ms ease;
         background: linear-gradient(to bottom, transparent 20%,  #f9f9e159 20%) no-repeat;
+    }
+
+    .skills-icon {
+        -webkit-transition: filter 500ms ease;
+        -moz-transition: filter 500ms ease;
+        -o-transition: filter 500ms ease;
+        transition: filter 500ms ease;
+        width: 6em;
+        height: 6em;
+        filter: brightness(0%) invert(31%) sepia(23%) saturate(559%) hue-rotate(179deg) brightness(90%) contrast(81%);
     }
 
     /* Projects */
@@ -235,6 +397,9 @@ body.lemon-yellow {
 
     /* Footer */
     footer {
+        -webkit-transition: background 500ms ease;
+        -moz-transition: background 500ms ease;
+        -o-transition: background 500ms ease;
         transition: background 500ms ease;
         background: #f9f9e159;
     }
@@ -245,42 +410,76 @@ body.lemon-yellow {
 }
 
 body.blue-purple {
+    -webkit-transition: background 500ms ease;
+    -moz-transition: background 500ms ease;
+    -o-transition: background 500ms ease;
     transition: background 500ms ease;
     background: #ffffff;
 
     /* Navigation Bar */
     app-nav-bar .upper-bar {
+        -webkit-transition: background 500ms ease;
+        -moz-transition: background 500ms ease;
+        -o-transition: background 500ms ease;
         transition: background 500ms ease;
         background: #7510f7;
     }
 
     app-nav-bar .logo a {
+        -webkit-transition: color 500ms ease;
+        -moz-transition: color 500ms ease;
+        -o-transition: color 500ms ease;
         transition: color 500ms ease;
         color: #7510f7;
     }
 
     app-nav-bar .active-link {
+        -webkit-transition: border-bottom 500ms ease;
+        -moz-transition: border-bottom 500ms ease;
+        -o-transition: border-bottom 500ms ease;
         transition: border-bottom 500ms ease;
         border-bottom: 0.125rem solid #7510f7;
     }
 
+    app-nav-bar .nav-icon {
+        -webkit-transition: filter 500ms ease;
+        -moz-transition: filter 500ms ease;
+        -o-transition: filter 500ms ease;
+        transition: filter 500ms ease;
+        width: 1.5rem;
+        height: 1.5rem;
+        filter: brightness(0%) invert(31%) sepia(23%) saturate(559%) hue-rotate(179deg) brightness(90%) contrast(81%);
+    }
+
     /* Typography */
     h1 {
+        -webkit-transition: color 500ms ease;
+        -moz-transition: color 500ms ease;
+        -o-transition: color 500ms ease;
         transition: color 500ms ease;
         color: #2d3748;
     }
 
     h2, h3, a, fa-icon, p {
+        -webkit-transition: color 500ms ease;
+        -moz-transition: color 500ms ease;
+        -o-transition: color 500ms ease;
         transition: color 500ms ease;
         color: #4a5568;
     }
 
     h6 {
+        -webkit-transition: color 500ms ease;
+        -moz-transition: color 500ms ease;
+        -o-transition: color 500ms ease;
         transition: color 500ms ease;
         color: #77869b;
     }
 
     hr {
+        -webkit-transition: border-color 500ms ease;
+        -moz-transition: border-color 500ms ease;
+        -o-transition: border-color 500ms ease;
         transition: border-color 500ms ease;
         border-top-width: 0.2rem;
         width: 10%;
@@ -289,12 +488,18 @@ body.blue-purple {
     }
 
     .underline {
+        -webkit-transition: text-decoration 500ms ease;
+        -moz-transition: text-decoration 500ms ease;
+        -o-transition: text-decoration 500ms ease;
         transition: text-decoration 500ms ease;
         text-decoration: underline;
         text-decoration-color: #7510f7;
     }
 
     .card {
+        -webkit-transition: linear-gradient 500ms ease;
+        -moz-transition: linear-gradient 500ms ease;
+        -o-transition: linear-gradient 500ms ease;
         transition: linear-gradient 500ms ease;
         background: linear-gradient(to bottom, #7510f7 0.2rem,  #ffffff 0.2rem) no-repeat;
     }
@@ -302,8 +507,21 @@ body.blue-purple {
     /* About Me */
         /* Skills */
     .skills {
+        -webkit-transition: linear-gradient 500ms ease;
+        -moz-transition: linear-gradient 500ms ease;
+        -o-transition: linear-gradient 500ms ease;
         transition: linear-gradient 500ms ease;
         background: linear-gradient(to bottom, transparent 20%,  #fbf8ff 20%) no-repeat;
+    }
+
+    .skills-icon {
+        -webkit-transition: filter 500ms ease;
+        -moz-transition: filter 500ms ease;
+        -o-transition: filter 500ms ease;
+        transition: filter 500ms ease;
+        width: 6em;
+        height: 6em;
+        filter: brightness(0%) invert(31%) sepia(23%) saturate(559%) hue-rotate(179deg) brightness(90%) contrast(81%);
     }
 
     /* Projects */
@@ -318,6 +536,9 @@ body.blue-purple {
 
     /* Footer */
     footer {
+        -webkit-transition: background 500ms ease;
+        -moz-transition: background 500ms ease;
+        -o-transition: background 500ms ease;
         transition: background 500ms ease;
         background: #fbf8ff;
     }
