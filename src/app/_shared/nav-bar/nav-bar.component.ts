@@ -13,7 +13,7 @@ export class NavBarComponent implements OnInit {
     '': '../../../assets/icons/Nav/sunny-outline.svg',
     'dark-mode': '../../../assets/icons/Nav/cloudy-night-outline.svg',
     'forest-green': '../../../assets/icons/Nav/leaf-outline.svg',
-    'lemon-yellow': '../../../assets/icons/Nav/icons_Orange.svg'
+    'lemon-yellow': '../../../assets/icons/Nav/flash-outline.svg'
   };
   currentTheme: any;
   nextTheme: any;   // For navigation theme button

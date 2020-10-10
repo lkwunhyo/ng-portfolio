@@ -22,7 +22,7 @@ var bethelpc: Project = {
     username: username,
     tools: ['Angular', '.NET Core', 'Web API'],
     repos_url: 'https://github.com/lkwunhyo/bethelpc',
-    web_url: 'https://github.com/lkwunhyo/bethelpc',
+    web_url: '',
     created: new Date()
 }
 
@@ -32,7 +32,7 @@ var faceRecognition: Project = {
                     the Azure Cognitive Services to recognize faces in an image.`,
     username: username,
     tools: ['React', 'Azure Services'],
-    repos_url: '',
+    repos_url: 'https://github.com/lkwunhyo/face-recognition',
     web_url: '',
     created: new Date()
 }
@@ -43,13 +43,13 @@ var portfolio = {
     username: username,
     tools: ['Angular', 'Web API'],
     repos_url: 'https://github.com/lkwunhyo/ng-portfolio',
-    web_url: 'https://github.com/lkwunhyo/ng-portfolio',
+    web_url: 'https://www.lkwunhyo.com/',
     created: new Date("2020-01-01T03:29:29Z")
 }
 
 var flappyDuck = {
     name: 'Flappy Duck',
-    description: 'A game created in C.',
+    description: 'A Flappy Bird imitation game created in C.',
     username: username,
     tools: ['C Programming Language'],
     repos_url: 'https://github.com/lkwunhyo/FlappyDuck',
