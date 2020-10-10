@@ -8,7 +8,6 @@ import { HomeComponent } from './_components/home/home.component';
 import { NavBarComponent } from './_shared/nav-bar/nav-bar.component';
 import { FooterComponent } from './_shared/footer/footer.component';
 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProjectsComponent } from './_components/projects/projects.component';
 import { AboutComponent } from './_components/about/about.component';
 
@@ -24,8 +23,7 @@ import { AboutComponent } from './_components/about/about.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    FontAwesomeModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

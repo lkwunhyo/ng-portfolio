@@ -1,7 +1,5 @@
 import { _ParseAST } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { faMoon, faLemon } from '@fortawesome/free-regular-svg-icons';
-import { faAdjust, faLeaf } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-nav-bar',
