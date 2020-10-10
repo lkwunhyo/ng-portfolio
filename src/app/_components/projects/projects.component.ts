@@ -18,7 +18,6 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
     this.projects = this.getRepos();
     this.yearSpan = this.projects.map(item => item.created.getFullYear()).filter(this.getDistinct);
-    console.log(this.yearSpan);
   }
 
   getRepos() {

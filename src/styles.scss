@@ -20,6 +20,10 @@ body {
   font-family: Inter;
 }
 
+app-nav-bar .nav-icon {
+  cursor: pointer;
+}
+
 body {
   -webkit-transition: background 500ms ease;
   -moz-transition: background 500ms ease;
